@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #F5F7FC;
+    color: #101B35;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-navy {
+    background: linear-gradient(135deg, #101B35 0%, #1a2d56 50%, #233d6e 100%);
+  }
+  .gradient-brand {
+    background: linear-gradient(135deg, #2563EB 0%, #6098fa 100%);
+  }
+  .gradient-amber {
+    background: linear-gradient(135deg, #F5A623 0%, #f9b325 100%);
+  }
+  .gradient-icon-blue {
+    background: linear-gradient(135deg, #2563EB 0%, #6098fa 100%);
+  }
+  .gradient-icon-amber {
+    background: linear-gradient(135deg, #F5A623 0%, #fbc94d 100%);
+  }
+  .gradient-icon-green {
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  }
+  .gradient-icon-red {
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+  }
+  .gradient-icon-navy {
+    background: linear-gradient(135deg, #101B35 0%, #34518a 100%);
+  }
+  .card-premium {
+    background: #ffffff;
+    border: 1px solid rgba(16,27,53,0.06);
+    box-shadow: 0 1px 3px rgba(16,27,53,0.06), 0 1px 2px rgba(16,27,53,0.04);
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .card-premium:hover {
+    box-shadow: 0 12px 40px rgba(16,27,53,0.1), 0 4px 12px rgba(16,27,53,0.06);
+    transform: translateY(-2px);
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #c5cee0 transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #c5cee0;
+    border-radius: 99px;
+  }
+}
+
+@layer base {
+  input, select, textarea {
+    font-family: inherit;
+  }
+  button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
